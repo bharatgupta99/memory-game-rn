@@ -152,6 +152,12 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file('mem-game.keystore')
+            storePassword 'password'
+            keyAlias 'mem-game'
+            keyPassword 'password'
+        }
     }
     buildTypes {
         debug {
